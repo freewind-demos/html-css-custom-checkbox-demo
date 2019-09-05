@@ -1,9 +1,29 @@
-#main {
-    width: 600px;
-    height: 400px;
-    background-color: #EEEEEE;
-    font-size: 40px;
-    line-height: 400px;
-    text-align: center;
-    margin: 0 auto;
+.my-checkbox {
+  font-size: 30px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 45px;
+  padding-top: 2px;
+  position: relative;
+}
+
+.my-checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background-color: #EEEEEE;
+  width: 30px;
+  height: 30px;
+  border: 1px solid blue;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.my-checkbox input:checked {
+  background-image: url(./images/checked.jpeg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
 }
